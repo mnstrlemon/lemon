@@ -5,7 +5,6 @@
 [Script]
 
 获取多账号京东Cookie = type=http-request,pattern=^https:\/\/me-api\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/JD_extra_cookie.js,script-update-interval=0
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js, tag=NASA每日一图
 cron "0 11 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js, tag=iDaily每日环球视野
 cron "5 2 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js, tag=京东白条
 cron "30 10 8 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js, tag=京东到家
@@ -24,7 +23,6 @@ cron "5 9 * * *" script-path=https://raw.githubusercontent.com/yangtingxiao/Quan
 京东多合一签到 = type=cron,cronexp=5 3 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 京东资产变动通知 = type=cron,cronexp="2 9 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_bean_change.js
 领京豆额外奖励 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_bean_home.js
-东东超市兑换奖品 = type=cron,cronexp="0 0 0 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_blueCoin.js
 口袋书店 = type=cron,cronexp="1 8,12,18 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_bookshop.js
 京东汽车 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_car.js
 京东汽车兑换 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_car_exchange.js
