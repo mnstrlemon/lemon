@@ -1,0 +1,25 @@
+#!name=𝘾𝙤𝙤𝙠𝙞𝙚
+#!desc=Cookie获取；
+#!system=ios
+
+# > 京东商城 
+# 登录 https://bean.m.jd.com/bean/signIndex.action
+京东商城 = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+# > 京东到家 app获取
+京东到家 = type=http-request,pattern=https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin,script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/jddj.js
+# > 京喜 注释获取
+#0. 完成以下三个任务之一获取token
+#1. 打开京喜农场，手动完成任意任务，必须完成任务领到水滴，提示获取cookie成功
+#2. 打开京喜工厂，收取电力，提示获取cookie成功
+#3. 打开京喜财富岛，手动成功提现一次，提示获取cookie成功
+京喜农场 = type=http-request,pattern=^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+京喜工厂 = type=http-request,pattern=^https\:\/\/m\.jingxi\.com\/dreamfactory\/generator\/CollectCurrentElectricity,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+京喜财富 = type=http-request,pattern=^https\:\/\/m\.jingxi\.com\/jxcfd\/consume\/CashOut,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+# > 京东金融 app获取后boxjs填写手机号
+京东金融 = type=http-request,pattern=^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/uc\/newna\/m\/userstat,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dompling/Script/master/jd/jd_jr_cookie.js,script-update-interval=0
+
+[MITM]
+hostname = %INSERT% api.m.jd.com, draw.jdfcloud.com, daojia.jd.com, jdjoy.jd.com, wq.jd.com, ms.jr.jd.com
+
+
+
