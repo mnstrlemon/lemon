@@ -12,7 +12,6 @@ cron "5 0 * * *" script-path=https://raw.githubusercontent.com/toulanboy/scripts
 东东萌宠 = type=cron,cronexp="15 6-18/6 * * *",wake-system=1,timeout=120,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_pet.js
 种豆得豆 = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=120,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_plantBean.js
 天天加速 = type=cron,cronexp="8 */3 * * *",wake-system=1,timeout=20,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_speed.js
-摇钱树 = type=cron,cronexp="3 */2 * * *",wake-system=1,timeout=20,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_moneyTree.js
 取关店铺商品 = type=cron,cronexp="10 */7 * * *",wake-system=1,timeout=20,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_unsubscribe.js
 东东超市 = type=cron,cronexp="11 1-23/5 * * *",wake-system=1,timeout=320,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_superMarket.js
 京小超兑换奖品 = type=cron,cronexp="0 0 0 * * *",wake-system=1,timeout=20,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_blueCoin.js
