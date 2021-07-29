@@ -42,3 +42,4 @@ cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/dompling/Script
 明星小店 = type=cron,cronexp="0 1,21 * * *",wake-system=1,timeout=3600,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_star_shop.js
 新潮品牌狂欢 = type=cron,cronexp="4 10 * * *",wake-system=1,timeout=3600,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_mcxhd.js
 省钱大赢家之翻翻乐 = type=cron,cronexp="20 * * * *",wake-system=1,timeout=3600,script-path=https://github.com/mnstrlemon/lemon/raw/main/jd_big_winner.js
+电竞经理 = type=cron,cronexp="0 0-23/2 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_EsportsManager.js
